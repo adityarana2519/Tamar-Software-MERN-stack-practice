@@ -1,61 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    font-size: 18px;
 }
-.responsive-navbar {
-    width: 90%;
-    padding: 1rem 5%;
-    background-color: lightblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+
+h1 {
+    margin: 20px 30px;
+    font-size: 32px;
 }
-.responsive-navbar a {
-    margin: 1rem;
-    text-decoration: none;
+
+a {
+    display: inline-block;
+    margin: 20px 30px;
+    color: blue;
 }
-.sticky-navbar {
+
+nav {
     position: sticky;
     top: 0;
+    z-index: 1000;
     background-color: black;
-    padding: 15px;
-    z-index: 2;
+    padding: 18px 30px;
 }
-.sticky-navbar a {
+
+nav a {
     color: white;
-    margin: 15px;
     text-decoration: none;
-}
-.my-list {
-    list-style-type: square;
-}
-.box-container {
-    position: relative;
-    height: 200px;
-}
-.box {
-    width: 120px;
-    height: 100px;
-    position: absolute;
-    padding: 10px;
-}
-.box-one {
-    background-color: lightblue;
-    left: 20px;
-    top: 20px;
-    z-index: 1;
+    margin: 0 25px 0 0;
+    font-size: 18px;
 }
 
-.box-two {
-    background-color: orange;
-    left: 80px;
-    top: 50px;
-    z-index: 2;
+nav a:hover {
+    color: yellow;
 }
 
-@media (max-width: 600px) {
-    .responsive-navbar {
-        flex-direction: column;
-    }
+section {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
 }
