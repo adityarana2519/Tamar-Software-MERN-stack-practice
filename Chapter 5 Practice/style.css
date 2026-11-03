@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.responsive-navbar {
+    width: 90%;
+    padding: 1rem 5%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.responsive-navbar a {
+    margin: 1rem;
+    text-decoration: none;
+}
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 15px;
+    z-index: 2;
+}
+.sticky-navbar a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+.my-list {
+    list-style-type: square;
+}
+.box-container {
+    position: relative;
+    height: 200px;
+}
+.box {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 10px;
+}
+.box-one {
+    background-color: lightblue;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
+
+.box-two {
+    background-color: orange;
+    left: 80px;
+    top: 50px;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .responsive-navbar {
+        flex-direction: column;
+    }
+}
